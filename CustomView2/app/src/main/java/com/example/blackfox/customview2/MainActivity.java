@@ -7,6 +7,7 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.RelativeLayout;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -34,7 +35,16 @@ public class MainActivity extends AppCompatActivity {
     private void moveButton() {
         View btn = findViewById(R.id.button);
         TransitionManager.beginDelayedTransition(viewGroup);
+
         //To change the location of button
+        RelativeLayout.LayoutParams newPositions = new RelativeLayout.LayoutParams(
+                RelativeLayout.LayoutParams.WRAP_CONTENT,RelativeLayout.LayoutParams.WRAP_CONTENT
+        );
+
+        newPositions.addRule(RelativeLayout.ALIGN_PARENT_BOTTOM,RelativeLayout.TRUE);
+        newPositions.addRule(RelativeLayout.ALIGN_PARENT_RIGHT,RelativeLayout.TRUE);
+
+        btn.setLayoutParams(newPositions);
 
     }
 }
