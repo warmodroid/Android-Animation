@@ -46,6 +46,7 @@ public class MainActivity extends AppCompatActivity {
 
         btn.setLayoutParams(newPositions);
 
+
         //Change the size of the button
         ViewGroup.LayoutParams sizeRules = btn.getLayoutParams();
         sizeRules.width = 450;
