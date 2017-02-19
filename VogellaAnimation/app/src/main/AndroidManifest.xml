@@ -3,7 +3,9 @@
     package="com.example.warmodroid.vogellaanimation">
 
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
-    <uses-permission-sdk-23 android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-permission-sdk-23 android:name="android.permission.SYSTEM_ALERT_WINDOW" />
 
     <application
         android:allowBackup="true"
@@ -19,9 +21,9 @@
             </intent-filter>
         </activity>
 
-        <service
-            android:name=".FloatingFaceBubbleService">
-        </service>
+        <service android:name=".FloatingFaceBubbleService"></service>
+
+        <activity android:name=".web"></activity>
     </application>
 
 </manifest>
