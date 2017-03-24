@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:custom="http://schemas.android.com/apk/res/com.mohit.warmodroid.valueselector"
+    tools:context="com.mohit.warmodroid.valueselector.MainActivity">
+
+<com.mohit.warmodroid.valueselector.customview
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    custom:circleColor="#ff0099"
+    custom:circleLabel="Hello"
+    custom:labelColor="#ffff66"
+    />
+
+</RelativeLayout>
